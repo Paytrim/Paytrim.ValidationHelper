@@ -2,17 +2,23 @@
 
 Validate Bankaccount
 * Get name of bank
+* Get clearing
+* Get Account No
 
-Validate SwedishPersonalId(Personnummer)
+Validate Swedish National Id(Personnummer)
 * Get IsSammorningsnummer
 * Get DateOfBirth
 
-Validate SwedishCompanyId(Organisationsnummer) 
+Validate Swedish Corporate National Id (Organisationsnummer) 
 
 ## Getting Started
 Check if valid
  ```csharp
     var isValid = Organisationsnummer.TryParse("XXXXXX-XXXX");
+   ```
+Check if valid
+ ```csharp
+    var isValid = Personnummer.TryParse("XXXXXXXX-XXXX");
    ```
 Get bankname etc
  ```csharp
