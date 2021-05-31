@@ -1,4 +1,4 @@
-# Paytrim.Validationhelper  [![buildstatus](https://github.com/Paytrim/Paytrim.Validationhelper/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Paytrim/Paytrim.Validationhelper/actions/workflows/dotnet.yml) 
+# Paytrim.ValidationHelper  [![buildstatus](https://github.com/Paytrim/Paytrim.ValidationHelper/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Paytrim/Paytrim.ValidationHelper/actions/workflows/dotnet.yml) 
 
 Validate Bankaccount
 * Get name of bank
