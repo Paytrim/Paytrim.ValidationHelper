@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Company>Paytrim</Company>
+    <Authors>Paytrim Developer Team</Authors>
+    <Product>SwedishValidation of Bankaccount, CompanyId, NationalId</Product>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright 2021 Paytrim AB</Copyright>
+    <PackageLicenseFile></PackageLicenseFile>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1.0</Version>
+  </PropertyGroup>
+
+</Project>

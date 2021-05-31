@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paytrim.ValidationHelper", "Paytrim.ValidationHelper\Paytrim.ValidationHelper.csproj", "{230E30E6-A6FD-4743-94D4-050D38A7FE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paytrim.ValidationHelper.Tests", "Paytrim.ValidationHelper.Tests\Paytrim.ValidationHelper.Tests.csproj", "{C5F7CC08-DB27-4FEC-808A-F063CFD8E765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{230E30E6-A6FD-4743-94D4-050D38A7FE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230E30E6-A6FD-4743-94D4-050D38A7FE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230E30E6-A6FD-4743-94D4-050D38A7FE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230E30E6-A6FD-4743-94D4-050D38A7FE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F7CC08-DB27-4FEC-808A-F063CFD8E765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F7CC08-DB27-4FEC-808A-F063CFD8E765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F7CC08-DB27-4FEC-808A-F063CFD8E765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F7CC08-DB27-4FEC-808A-F063CFD8E765}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48CA70ED-08E9-41A8-8728-3DEEF7580E92}
+	EndGlobalSection
+EndGlobal
