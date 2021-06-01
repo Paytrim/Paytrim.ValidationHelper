@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Company>Paytrim</Company>
-    <Authors>Paytrim Developer Team</Authors>
-    <Product>SwedishValidation of Bankaccount, CompanyId, NationalId</Product>
+    <Company>Paytrim AB</Company>
+    <Authors>Paytrim developer team</Authors>
+    <Product>Validation of Swedish bank accounts, corporate identity numbers and personal identity numbers</Product>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Copyright 2021 Paytrim AB</Copyright>
@@ -15,8 +15,10 @@
     <PackageProjectUrl>https://github.com/Paytrim/Paytrim.ValidationHelper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Paytrim/Paytrim.ValidationHelper</RepositoryUrl>
     <PackageTags>SwedishCompanyId, SwedishPersonalId, SwedishBankAccountNumber</PackageTags>
-    <Description>Validation of SwedishCompanyId, SwedishPersonalId, SwedishBankAccountNumber</Description>
+    <Description>Validation of Swedish bank accounts, corporate identity numbers and personal identity numbers.
+Validering av kontonummer, personnummer och organisationsnummer.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Initial</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
