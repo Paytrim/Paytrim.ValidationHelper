@@ -11,11 +11,11 @@
     <PackageLicenseFile></PackageLicenseFile>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.2.0</Version>
+    <Version>1.0.3.0</Version>
     <PackageProjectUrl>https://github.com/Paytrim/Paytrim.ValidationHelper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Paytrim/Paytrim.ValidationHelper</RepositoryUrl>
-    <PackageTags>SwedishCompanyId, SwedishPersonalId, SwedishBankAccountNumber</PackageTags>
-    <Description>Validation of Swedish bank accounts, corporate identity numbers and personal identity numbers.
+    <PackageTags>kontonummer organisationsnummer personnummer bank accountnumber swedish validate parse</PackageTags>
+    <Description>Parsing and validation of Swedish bank accounts, corporate identity numbers and personal identity numbers.
 Validering av kontonummer, personnummer och organisationsnummer.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes>Initial</PackageReleaseNotes>
