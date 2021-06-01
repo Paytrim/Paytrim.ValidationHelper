@@ -30,9 +30,9 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}  
         
-    - run: dotnet build <my project>
+    - run: dotnet build Paytrim.ValidationHelper
     - name: Create the package
-      run: dotnet pack --configuration Release <my project>
+      run: dotnet pack --configuration Release Paytrim.ValidationHelper
     - name: Publish the package to GPR
       run: dotnet nuget push <my project>/bin/Release/*.nupkg
     
