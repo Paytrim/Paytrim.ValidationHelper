@@ -3,7 +3,7 @@ namespace Paytrim.ValidationHelper
     /// <summary>
     /// This section is a port of Kontonummer.js
     /// https://github.com/jop-io/kontonummer.js
-    /// Licens: MIT Författare: @jop-io, http://jop.io
+    /// Licens: MIT FÃ¶rfattare: @jop-io, http://jop.io
     /// </summary>
     public static class Banks
     {
@@ -99,19 +99,19 @@ namespace Paytrim.ValidationHelper
                         regex: @"^939[0-9]{8}$"
             ),
             new SwedishBank(
-                        name: "Lån & Spar Bank Sverige",
+                        name: "LÃ¥n & Spar Bank Sverige",
                         type: 1,
                         comment: 1,
                         regex: @"^963[0-9]{8}$"
             ),
             new SwedishBank(
-                        name: "Länsförsäkringar Bank",
+                        name: "LÃ¤nsfÃ¶rsÃ¤kringar Bank",
                         type: 1,
                         comment: 1,
                         regex: @"^(340|906)[0-9]{8}$"
             ),
             new SwedishBank(
-                        name: "Länsförsäkringar Bank",
+                        name: "LÃ¤nsfÃ¶rsÃ¤kringar Bank",
                         type: 1,
                         comment: 2,
                         regex: @"^902[0-9]{8}$"
@@ -159,7 +159,7 @@ namespace Paytrim.ValidationHelper
                         regex: @"^928[0-9]{8}$"
             ),
             new SwedishBank(
-                        name: "Riksgälden",
+                        name: "RiksgÃ¤lden",
                         type: 1,
                         comment: 2,
                         regex: @"^988[0-9]{8}$"
@@ -195,7 +195,7 @@ namespace Paytrim.ValidationHelper
                         regex: @"^7[0-9]{10}$"
             ),
             new SwedishBank(
-                        name: "Ålandsbanken",
+                        name: "Ã…landsbanken",
                         type: 1,
                         comment: 2,
                         regex: @"^23[0-9]{9}$"
@@ -226,7 +226,7 @@ namespace Paytrim.ValidationHelper
                         regex: @"^(3300|3782)[0-9]{10}$"
             ),
             new SwedishBank(
-                        name: "Riksgälden",
+                        name: "RiksgÃ¤lden",
                         type: 2,
                         comment: 1,
                         regex: @"^989[0-9]{11}$"
