@@ -33,6 +33,8 @@ namespace Paytrim.ValidationHelper.Tests
         [Theory]
         [InlineData("5560360793", true)]
         [InlineData("5560360792", false)]
+        [InlineData("1010101010", true)]
+        [InlineData("1010101011", false)]
         [InlineData(" 556036-0793 ", true)]
         public void OrganisationsnummerTryParse_ShouldReturn(string organisationsnummer, bool isOk)
         {

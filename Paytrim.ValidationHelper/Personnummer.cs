@@ -28,7 +28,7 @@ namespace Paytrim.ValidationHelper
                 var onlyNumbers = new string(personnummer.Where(c => c >= '0' && c <= '9').ToArray());
                 Parse(onlyNumbers, out _, out _);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return false;
             }
@@ -39,6 +39,27 @@ namespace Paytrim.ValidationHelper
         public override string ToString()
         {
             return _personnummer;
+        }
+
+        public string ToString(int length)
+        {
+            if (length < 10 || length > 13)
+            {
+                throw new ApplicationException("Use length 10-13 for different formats of '(cc)yymmdd(-)nnnn'");
+            }
+            var yearMonth = length switch
+            {
+                10 or 11 => _dateOfBirth.ToString("yyMM"),
+                _ => _dateOfBirth.ToString("yyyyMM"),
+            };
+            var day = (IsSamordningsnummer ? _dateOfBirth.Day + 60 : _dateOfBirth.Day).ToString("00");
+            var separator = length switch
+            {
+                10 or 12 => string.Empty,
+                _ => (DateTime.UtcNow.AddYears(-100).Year < _dateOfBirth.Year) ? "-" : "+"
+            };
+            var number = _personnummer[^4..];
+            return $"{yearMonth}{day}{separator}{number}";
         }
 
         private static void Parse(string personnummer, out DateTime dateOfBirth, out bool isSamordningsnummer)
