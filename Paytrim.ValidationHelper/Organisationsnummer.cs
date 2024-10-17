@@ -21,7 +21,7 @@ namespace Paytrim.ValidationHelper
                 var onlyNumbers = new string(organisationsnummer.Where(c => c >= '0' && c <= '9').ToArray());
                 Parse(onlyNumbers);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return false;
             }
@@ -41,9 +41,12 @@ namespace Paytrim.ValidationHelper
                 throw new ApplicationException($"'{organisationsnummer}' is not formated correctly (yymmddnnnn or nnnnnn(-)nnnn)");
             }
 
-            if(int.Parse(organisationsnummer.Substring(2, 1)) <= 1)
+            if (int.Parse(organisationsnummer.Substring(2, 1)) <= 1)
             {
-                Personnummer.TryParse(organisationsnummer);
+                if (!Personnummer.TryParse(organisationsnummer))
+                {
+                    throw new ApplicationException($"'{organisationsnummer}' is not valid");
+                }
             }
             else
             {
