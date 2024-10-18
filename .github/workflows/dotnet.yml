@@ -29,7 +29,7 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 8.0.x # SDK Version to use.
-        source-url: https://nuget.pkg.github.com/<owner>/index.json
+        source-url: https://nuget.pkg.github.com/Paytrim/index.json
       env:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}  
         
