@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Company>Paytrim AB</Company>
     <Authors>Paytrim developer team</Authors>
     <Product>Validation of Swedish bank accounts, corporate identity numbers and personal identity numbers</Product>
