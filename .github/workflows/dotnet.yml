@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # Build and test
     - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
@@ -20,11 +21,26 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build --no-restore
     - name: Test
       run: dotnet test --verbosity normal 
+
+  # create nuget package
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 8.0.x # SDK Version to use.
+        source-url: https://nuget.pkg.github.com/<owner>/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}  
+        
+    - run: dotnet build --configuration Release Paytrim.ValidationHelper
     - name: Create the package
       run: dotnet pack --configuration Release Paytrim.ValidationHelper
+    - name: Publish the package to GPR
+      if: github.event_name == 'push'
+      run: dotnet nuget push Paytrim.ValidationHelper/bin/Release/*.nupkg
+
+    # Store the artifact in the pipe line
     - name: Store artifact
       uses: actions/upload-artifact@v4
       with:
