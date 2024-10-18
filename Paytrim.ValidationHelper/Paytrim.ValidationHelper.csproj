@@ -19,6 +19,9 @@
 Validering av kontonummer, personnummer och organisationsnummer.</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageReleaseNotes>Initial</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-
+ <ItemGroup>
+        <None Include="../README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 </Project>
