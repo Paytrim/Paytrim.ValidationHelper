@@ -17,7 +17,7 @@
     <PackageTags>kontonummer organisationsnummer personnummer bank accountnumber swedish validate parse</PackageTags>
     <Description>Parsing and validation of Swedish bank accounts, corporate identity numbers and personal identity numbers.
 Validering av kontonummer, personnummer och organisationsnummer.</Description>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageReleaseNotes>Initial</PackageReleaseNotes>
   </PropertyGroup>
 
