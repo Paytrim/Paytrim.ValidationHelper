@@ -16,6 +16,7 @@ namespace Paytrim.ValidationHelper.Tests
         [InlineData("8322-1, 987 654 321-0", "83221", "9876543210", "Swedbank")]
         [InlineData("9552-1361377", "9552", "1361377", "Avanza Bank")]
         [InlineData("5304 02 878 50", "5304", "0287850", "SEB")]
+        [InlineData("97101234560", "9710", "1234560", "Lunar Bank")]
         public void SwedishBankAccount_Positive(string completeAccount, string clearingNumber, string accountNumber, string name)
         {
             var swedishBankAccount = new SwedishBankAccount(completeAccount);
@@ -29,6 +30,7 @@ namespace Paytrim.ValidationHelper.Tests
         [InlineData("123456789")] // invalid completly
         [InlineData("6789123456788")] // valid number, invalid checksum
         [InlineData("8424-1,983 189 224-6")] // invalid swedbank clearing
+        [InlineData("97101234561")] // invalid bank lunar bank
         public void SwedishBankAccount_Negative(string completeAccount)
         {
             Assert.Throws<ApplicationException>(() => new SwedishBankAccount(completeAccount));
@@ -37,6 +39,8 @@ namespace Paytrim.ValidationHelper.Tests
         [Theory]
         [InlineData("6789123456789", true)]
         [InlineData("6789123456788", false)]
+        [InlineData("97101234560", true)]
+        [InlineData("97101234561", false)] 
         public void SwedishBankAccountTryParse_ShouldReturn(string completeAccount, bool isOk)
         {
             Assert.Equal(isOk, SwedishBankAccount.TryParse(completeAccount));

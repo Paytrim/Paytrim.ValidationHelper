@@ -248,6 +248,12 @@ namespace Paytrim.ValidationHelper
                         type: 2,
                         comment: 1,
                         regex: @"^93[0-4][0-9]{11}$"
+            ),
+            new SwedishBank(
+                        name: "Lunar Bank",
+                        type: 1,
+                        comment: 2,
+                        regex: @"^971[0-9]{8}$"
             )
         };
     }
