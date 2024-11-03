@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Paytrim.ValidationHelper.Tests
+namespace Paytrim.ValidationHelper.Tests 
 {
     public class LuhnAlgorithmTests
     {
