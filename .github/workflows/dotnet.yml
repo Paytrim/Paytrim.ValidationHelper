@@ -38,7 +38,7 @@ jobs:
       run: dotnet pack --configuration Release Paytrim.ValidationHelper
     - name: Publish the package to GPR
       if: github.event_name == 'push'
-      run: dotnet nuget push Paytrim.ValidationHelper/bin/Release/*.nupkg
+      run: dotnet nuget push Paytrim.ValidationHelper/bin/Release/*.nupkg --skip-duplicate
 
     # Store the artifact in the pipe line
     - name: Store artifact
